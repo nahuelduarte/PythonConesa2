@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %} Busqueda {% endblock %}
+{% block page_content %}
+<div class="page-header">
+    <h1>Buscador</h1>
+    <h2>Clientes por país</h2>
+</div>
+    <div class="page-header">
+        {{ wtf.quick_form(form) }}
+    </div>
+        <ul>
+            {% for l in listapaises %}
+                <li><a href="/buscado_pais/{{ l }}">{{ l }}</a></li>
+            {% endfor %}
+        </ul>
+</div>        
+{% endblock %}

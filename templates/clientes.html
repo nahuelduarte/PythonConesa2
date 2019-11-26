@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Clientes{% endblock %}
+{% block page_content %}
+<div class="page-header">    
+    <h1>Clientes de Conesa Inc.</h1>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Clientes:</div>
+  <table class="table">
+    <tr>
+        <th>{{cabeza[0]}}</th>
+        <th>{{cabeza[1]}}</th>
+        <th>{{cabeza[2]}}</th>
+        <th>{{cabeza[3]}}</th>
+        <th>{{cabeza[4]}}</th>
+        <th>{{cabeza[5]}}</th>
+        <th>{{cabeza[6]}}</th>
+        <th>{{cabeza[7]}}</th>
+    </tr>
+{% for linea in cuerpo %}
+    <tr>
+        <td>{{linea[0]}}</td>
+        <td>{{linea[1]}}</td>
+        <td>{{linea[2]}}</td>
+        <td>{{linea[3]}}</td>
+        <td>{{linea[4]}}</td>
+        <td>{{linea[5]}}</td>
+        <td>{{linea[6]}}</td>
+        <td>{{linea[7]}}</td>
+    </tr>
+{% endfor %}
+  </table>
+</div>
+{% endblock %}

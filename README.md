@@ -1,0 +1,2 @@
+# PythonConesa
+PARADIGMAS
